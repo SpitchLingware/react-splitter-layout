@@ -1,6 +1,6 @@
 {
-  "name": "react-splitter-layout",
-  "version": "4.0.0",
+  "name": "@spitchlingware/react-splitter-layout",
+  "version": "4.0.4",
   "description": "A simple split layout for React and modern browsers",
   "keywords": [
     "react",
@@ -12,22 +12,26 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zesik/react-splitter-layout"
+    "url": "https://github.com/SpitchLingware/react-splitter-layout"
   },
   "bugs": {
-    "url": "https://github.com/zesik/react-splitter-layout/issues"
+    "url": "https://github.com/SpitchLingware/react-splitter-layout/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/*"
   ],
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
     "babel-loader": "^8.0.5",
     "copy-webpack-plugin": "^4.6.0",
-    "coveralls": "^3.0.2",
+    "coveralls": "^3.1.1",
     "css-loader": "^2.1.0",
     "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -38,18 +42,19 @@
     "jest": "^24.1.0",
     "jsdom": "^13.2.0",
     "raf": "^3.4.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-router-dom": "^4.3.1",
-    "react-test-renderer": "^16.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
+    "react-test-renderer": "^18.2.0",
     "style-loader": "^0.23.1",
+    "typescript": "^4.9.5",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
   },
   "peerDependencies": {
     "prop-types": "^15.5.0",
-    "react": "^15.5.0 || ^16.0.0"
+    "react": "^18.0.0"
   },
   "scripts": {
     "prepublish": "webpack --progress",
